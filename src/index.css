@@ -1,0 +1,131 @@
+/* ==========================================================================
+   OUTSY — IMMERSIVE OUTDOOR ADVENTURE + PREMIUM PRODUCT DESIGN SYSTEM
+   Palette: Deep Forest Green, Warm Off-White, Muted Sage, Restrained Earth Accents
+   Typography: Outfit (Outdoor Display), Plus Jakarta Sans (Functional UI), Newsreader (Ethos)
+   ========================================================================== */
+
+:root {
+  /* Surface Canvases */
+  --c-canvas-light: #F7F5EE;
+  --c-canvas-surface: #F0ECE2;
+  --c-canvas-card: #FFFFFF;
+  --c-canvas-dark: #0F2015;
+  --c-canvas-slate: #152A1C;
+
+  /* Borders & Dividers */
+  --c-border-light: #DDD5C7;
+  --c-border-subtle: #E8E2D6;
+  --c-border-dark: rgba(255, 255, 255, 0.12);
+  --c-border-dark-subtle: rgba(255, 255, 255, 0.08);
+
+  /* Deep Forest Greens */
+  --c-forest-primary: #1C3624;
+  --c-forest-deep: #0D1B11;
+  --c-forest-hover: #152B1D;
+  --c-forest-active: #0B170E;
+
+  /* Muted Sage */
+  --c-sage-muted: #4B6E57;
+  --c-sage-soft: #E5EFE8;
+  --c-sage-border: #C8DCD0;
+
+  /* Restrained Earth Accents */
+  --c-earth-warm: #C06B3E;
+  --c-earth-soft: #FAF0E8;
+  --c-earth-border: #E8D3C4;
+
+  /* High Contrast Typography */
+  --c-text-headline: #101E14;
+  --c-text-body: #2B3D30;
+  --c-text-muted: #566A5D;
+  --c-text-subtle: #7F9386;
+
+  /* Light Text on Dark Scrims */
+  --c-text-on-dark: #F7FAF8;
+  --c-text-on-dark-muted: #C7DBD0;
+  --c-text-on-dark-subtle: #96B2A1;
+
+  /* Typography Stacks */
+  --font-display: 'Outfit', system-ui, -apple-system, sans-serif;
+  --font-ui: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Newsreader', Georgia, serif;
+
+  /* Crisp, Non-Generic Radii */
+  --radius-xs: 3px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* Tactical Shadows */
+  --shadow-subtle: 0 1px 3px rgba(13, 27, 17, 0.05), 0 6px 16px rgba(13, 27, 17, 0.03);
+  --shadow-card: 0 2px 8px rgba(13, 27, 17, 0.06), 0 12px 32px rgba(13, 27, 17, 0.04);
+  --shadow-hover: 0 6px 20px rgba(13, 27, 17, 0.09), 0 16px 40px rgba(13, 27, 17, 0.05);
+
+  /* Layout Widths */
+  --max-width: 1240px;
+  --page-padding: 32px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-ui);
+  background-color: var(--c-canvas-light);
+  color: var(--c-text-body);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--c-canvas-light);
+  color: var(--c-text-body);
+  overflow-x: hidden;
+}
+
+/* Typography Hierarchy */
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-display);
+  color: var(--c-text-headline);
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+p {
+  color: var(--c-text-body);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: var(--font-ui);
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+button:focus-visible, a:focus-visible {
+  outline: 2px solid var(--c-sage-muted);
+  outline-offset: 3px;
+}
+
+/* Selection */
+::selection {
+  background: var(--c-forest-primary);
+  color: #ffffff;
+}

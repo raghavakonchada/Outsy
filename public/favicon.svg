@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#2d5a3f"/>
+  <circle cx="44" cy="20" r="7" fill="#f4c95d" opacity="0.9"/>
+  <!-- Leaf path -->
+  <path d="M20 44C20 44 21 28 36 21C36 21 44 33 34 43C25.5 51.5 20 44 20 44Z" fill="#84ba95"/>
+  <path d="M21 43C28 37 34 30 36 21" stroke="#1b3c29" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M26 38C29 37 32 37 34 38" stroke="#1b3c29" stroke-width="1.6" stroke-linecap="round"/>
+</svg>
