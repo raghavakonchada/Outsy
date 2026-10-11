@@ -1,16 +1,87 @@
-# React + Vite
+# Outsy 🌿
+### Less scrolling. More living.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Outsy is an AI-powered companion that encourages people to step away from their screens and reconnect with the real world through small, meaningful activities.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **AI-Powered Missions:** Generate real-world activities using Google's Gemini API.
+- **Activity Categories:** Explore missions focused on connection, mindfulness, discovery, care, and recharging.
+- **Flexible Duration:** Choose activities that fit your available time.
+- **Mission Tracking:** Mark completed activities and track your progress.
+- **Safety-First Approach:** Encourage respectful interactions with people, animals, and nature.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- Node.js
+- Express
+- Google Gemini API
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js and npm
+- A Google Gemini API key
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/raghavakonchada/Outsy.git
+cd Outsy
+```
+
+### 2. Install frontend dependencies
+
+```bash
+npm install
+```
+
+### 3. Install backend dependencies
+
+```bash
+cd server
+npm install
+```
+
+### 4. Configure the API key
+
+Create a `.env` file inside the `server` folder:
+
+```env
+GEMINI_API_KEY=your_api_key_here
+```
+
+Never commit your real API key.
+
+### 5. Start the backend
+
+From the `server` folder, run:
+
+```bash
+node index.js
+```
+
+### 6. Start the frontend
+
+Open a second terminal in the project root and run:
+
+```bash
+npm run dev
+```
+
+Open the local URL shown by Vite in your browser.
+
+## 🌱 Vision
+
+Outsy aims to make real-world experiences easier to discover and encourage people to spend less time scrolling and more time living.
+
+## 🤝 Contributing
+
+Contributions, ideas, bug reports, and improvements are welcome. Feel free to open an issue or submit a pull request.
+
+## 📄 License
+
+A license has not yet been selected. Licensing can be added when the project owner chooses one.
